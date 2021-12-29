@@ -263,7 +263,7 @@ const monsters = [
 			this.kill = 0;
 			this.setupPlayer();
 			this.setupMonster();
-			console.log("battleconst:",this.p,this.m);
+			//console.log("battleconst:",this.p,this.m);
 		};
 		setupPlayer(){
 			this.p.calculateStats();
@@ -593,7 +593,7 @@ function calcTotals(){
 	
 	$("#total"+statname[i]).html(Math.round((1.0-idr)*100.0)+"%");
 	idr*=1.0-parseFloat($('#totalidrother').html())/100;
-	console.log(idr,$("#final"+statname[i]),Math.round((1.0-idr)*100.0)+"%");
+	//console.log(idr,$("#final"+statname[i]),Math.round((1.0-idr)*100.0)+"%");
 	$("#final"+statname[i]).html(Math.round((1.0-idr)*100.0)+"%");
 	}
 	else{
@@ -673,9 +673,7 @@ function changeView(view,t){
 	$(view).show();
 }
 
-function test(){
-	for (var i = 0; i<100; i++){
+function runBattleSim(){
 	battle = new Battle(this.player,this.monster);
-	//console.log(player,monster,battle);
-	console.log("Player wins?",battle.fightMonsters(50));}
+	battle.fightMonsters(50);
 }

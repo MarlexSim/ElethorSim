@@ -3905,9 +3905,9 @@
 				<td></td>
 				<td><input type="text" value="100.84" id="corptruedmg">%</td>
 				<td></td>
-				<td><input type="text" id="compendiumsavagery"></td>	
-				<td><input type="text" id="compendiumpierce"></td>
-				<td><input type="text" class="maxdmg" id="compendiummaxdmg">%</td>
+				<td><input type="text" value ="0" id="compendiumsavagery"></td>	
+				<td><input type="text" value ="0" id="compendiumpierce"></td>
+				<td><input type="text" value ="0" class="maxdmg" id="compendiummaxdmg">%</td>
 			</tr>
 			<tr>
 				<td colspan="4">Drake</td>
@@ -3941,9 +3941,9 @@
 				<td></td>
 				<td><input type="text" value="22.15" id="corphealth">%</td>
 				<td></td>
-				<td><input type="text" id="compendiumfortitude"></td>
-				<td><input type="text" id="compendiumarmor"></td>
-				<td><input type="text" class="damage" id="compendiumdamage">%</td>
+				<td><input type="text" value ="0" id="compendiumfortitude"></td>
+				<td><input type="text" value ="0" id="compendiumarmor"></td>
+				<td><input type="text" value ="0" class="damage" id="compendiumdamage">%</td>
 			</tr>
 			<tr>
 				<td colspan="4">Merchant</td>
@@ -3976,9 +3976,9 @@
 				<td></td>
 				<td><input type="text" value ="0.05" id="corpreflect">%</td>
 				<td></td>
-				<td><input type="text" id="compendiumspeed"></td>	
-				<td><input type="text" class="mindmg" id="compendiummindmg">%</td>
-				<td><input type="text" id="compendiummultidebuff">%</td>
+				<td><input type="text" value ="0" id="compendiumspeed"></td>	
+				<td><input type="text" value ="0" class="mindmg" id="compendiummindmg">%</td>
+				<td><input type="text" value ="0" id="compendiummultidebuff">%</td>
 			</tr>
 			<tr>
 				<td colspan="4">Prospector</td>
@@ -4076,6 +4076,7 @@
 <option value="51">Doompaw</option>
 <option value="52">Smoky Apparition</option>
 </select>
+<input class="button is-fullwidth is-small is-success" width="200px!important" type="button" value="Fight!" onclick='runBattleSim();'>
 		<div id="combatLog" class="column is-3 is-offset-1">
 			<div>
 				<h5 class="title is-5">
