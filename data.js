@@ -293,8 +293,8 @@ const monsters = [
 			$(".has-kill-amount").html("You killed "+this.kill+" "+this.m.name+"!");
 			$(".is-fight-health.player").html(Number(Math.round(this.playerhealth)).toLocaleString()+" / "+Number(this.p.health).toLocaleString()+" ("+healthPercentPlayer+"%)");
 			$(".is-fight-health.enemy").html(Number(Math.round(this.monsterhealth)).toLocaleString()+" / "+Number(this.m.health).toLocaleString()+" ("+healthPercentEnemy+"%)");
-			$(".progress.player").val(Math.max(0,Math.round(this.playerhealth)));
-			$(".progress.enemy").val(Math.max(0,Math.round(this.monsterhealth)));
+			$(".progress.player").val(Math.max(0,Math.round(this.playerhealth))).attr({"max":this.p.health});
+			$(".progress.enemy").val(Math.max(0,Math.round(this.monsterhealth))).attr({"max":this.m.health});
 			};
 			
 		fightMonsters(count){
