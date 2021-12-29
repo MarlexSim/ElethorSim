@@ -503,7 +503,11 @@ function updateAll(){
 function updateEquip(e){
 	var drdwn = e;
 	if(e.target)
-	drdwn = e.target.parentNode.parentNode.getElementsByTagName('select')[0];
+		drdwn = e.target.parentNode.parentNode.getElementsByTagName('select')[0];
+	if (drdwn === undefined) 
+		drdwn = e.target.parentNode.parentNode.parentNode.getElementsByTagName('select')[0];
+
+
 	if(drdwn!==undefined){
 	var empower = parseInt($('.'+drdwn.id+'.empower').val());
 	$.each(equipmentStats[drdwn.id][drdwn.value], function(i, p) {	
@@ -559,7 +563,7 @@ function updateEquip(e){
 return '';};
 	
 function calcTotals(){
-  updateOther();
+  
 //Allstat
 
 	var allStat=100;
