@@ -664,6 +664,7 @@ function updateOther(){
 		}
 	});
 */
+	calcTotals()
 	}	
 function changeView(view,t){
 
