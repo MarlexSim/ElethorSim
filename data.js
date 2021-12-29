@@ -390,7 +390,7 @@ const monsters = [
 
 	class Combatant {
 		//base stats
-		level;fortitude;speed;savagery;	#pierce; #armor; idr=0; mindmg=0; maxdmg=0;puncture=0;healthmult=0;damage=1;#dr=0;name;
+		level=0;fortitude=0;speed=0;savagery=0;#pierce=0; #armor=0; idr=0; mindmg=0; maxdmg=0;puncture=0;healthmult=0;damage=1;#dr=0;name;
 		//corp stats
 		corpreflect=0; corptruedmg=0;corphealth=0; 
 		//calculated stats
